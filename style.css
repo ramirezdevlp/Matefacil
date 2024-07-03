@@ -1,0 +1,72 @@
+/* ESTRUCTURA DE CÓDIGO PARA EL FONDO DE PANTALLA */
+body{
+    background-image: url("img/bgmain.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(6,1fr);
+    overflow: hidden;
+}
+
+a{
+text-decoration: none;
+}
+
+/* ESTRUCTURA DE CÓDIGO PARA EL CONTENEDOR DE ELEMENTOS */
+.container{
+    margin-left: 45px;
+    justify-content: center;
+    grid-row: 5/6;
+    grid-column: 2/3;
+    column-gap: 15px;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+/* ESTILO Y PROPIEDADES DEL BOTÓN EMPEZAR */
+.my-button {
+    line-height: 2;
+    margin-top: 100px;
+    margin-left: 90px;
+    width: 360px;
+    height: 75px;
+    text-align: center;
+    background-color: rgb(255, 196, 0);
+    color: white;
+    font-family: sans-serif;
+    font-size: 37px; 
+    font-weight: 600;
+    border-radius: 250px;
+    border: 5px solid #000;
+    border-color: black;
+    cursor: pointer;
+    letter-spacing: -1px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+    transition-property: box-shadow, transform;
+    -webkit-transition-property: box-shadow, transform;
+}
+
+/* EFECTOS DEL BOTÓN EMPEZAR */
+.my-button:hover, .my-button:focus, .my-button:active{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+}
+
+/* ESTILO DEL PIE DE PÁGINA*/
+.label-pag{
+    text-align: center;
+    padding: 0;
+    margin-top: 30px;
+    margin-left: 70px;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 22px;
+    letter-spacing: -1px;
+    grid-row: 6/7;
+    grid-column: 2/3;
+}
